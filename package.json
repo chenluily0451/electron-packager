@@ -1,22 +1,15 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-quick-start1",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "descripton": "...",
+  "main": "app/main.js",
   "scripts": {
-    "start": "electron ."
+    "packageWin": "electron-packager ./app --win --out ./dist/mac --arch=x64  --electron-version=1.8.2 --asar",
+    "packageWin1": "electron-packager ./app --win32 --out ./dist/window --arch=x64  --electron-version=1.8.2 --asar"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "dependencies": {},
   "devDependencies": {
-    "electron": "^6.0.12"
+    "electron-packager": "^14.0.6",
+    "electron": "^1.8.2"
   }
 }
